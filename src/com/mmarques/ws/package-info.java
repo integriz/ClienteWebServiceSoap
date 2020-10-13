@@ -1,2 +1,2 @@
-@javax.xml.bind.annotation.XmlSchema(namespace = "http://controller.mmarques.com/")
+@javax.xml.bind.annotation.XmlSchema(namespace = "http://resource.mmarques.com/")
 package com.mmarques.ws;

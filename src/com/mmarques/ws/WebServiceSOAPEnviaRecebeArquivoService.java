@@ -17,20 +17,20 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "WebServiceSOAPEnviaRecebeArquivoService", targetNamespace = "http://controller.mmarques.com/", wsdlLocation = "http://localhost:8080/AplicaoWebModeloWebServiceSOAP/WebServiceSOAPEnviaRecebeArquivoService?WSDL")
+@WebServiceClient(name = "WebServiceSOAPEnviaRecebeArquivoService", targetNamespace = "http://resource.mmarques.com/", wsdlLocation = "http://localhost:8080/AplicaoWebModeloWebServiceSOAP/WebServiceSOAPEnviaRecebeArquivoService?wsdl")
 public class WebServiceSOAPEnviaRecebeArquivoService
     extends Service
 {
 
     private final static URL WEBSERVICESOAPENVIARECEBEARQUIVOSERVICE_WSDL_LOCATION;
     private final static WebServiceException WEBSERVICESOAPENVIARECEBEARQUIVOSERVICE_EXCEPTION;
-    private final static QName WEBSERVICESOAPENVIARECEBEARQUIVOSERVICE_QNAME = new QName("http://controller.mmarques.com/", "WebServiceSOAPEnviaRecebeArquivoService");
+    private final static QName WEBSERVICESOAPENVIARECEBEARQUIVOSERVICE_QNAME = new QName("http://resource.mmarques.com/", "WebServiceSOAPEnviaRecebeArquivoService");
 
     static {
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("http://localhost:8080/AplicaoWebModeloWebServiceSOAP/WebServiceSOAPEnviaRecebeArquivoService?WSDL");
+            url = new URL("http://localhost:8080/AplicaoWebModeloWebServiceSOAP/WebServiceSOAPEnviaRecebeArquivoService?wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }
@@ -69,7 +69,7 @@ public class WebServiceSOAPEnviaRecebeArquivoService
      */
     @WebEndpoint(name = "WebServiceSOAPEnviaRecebeArquivoPort")
     public WebServiceSOAPEnviaRecebeArquivo getWebServiceSOAPEnviaRecebeArquivoPort() {
-        return super.getPort(new QName("http://controller.mmarques.com/", "WebServiceSOAPEnviaRecebeArquivoPort"), WebServiceSOAPEnviaRecebeArquivo.class);
+        return super.getPort(new QName("http://resource.mmarques.com/", "WebServiceSOAPEnviaRecebeArquivoPort"), WebServiceSOAPEnviaRecebeArquivo.class);
     }
 
     /**
@@ -81,7 +81,7 @@ public class WebServiceSOAPEnviaRecebeArquivoService
      */
     @WebEndpoint(name = "WebServiceSOAPEnviaRecebeArquivoPort")
     public WebServiceSOAPEnviaRecebeArquivo getWebServiceSOAPEnviaRecebeArquivoPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://controller.mmarques.com/", "WebServiceSOAPEnviaRecebeArquivoPort"), WebServiceSOAPEnviaRecebeArquivo.class, features);
+        return super.getPort(new QName("http://resource.mmarques.com/", "WebServiceSOAPEnviaRecebeArquivoPort"), WebServiceSOAPEnviaRecebeArquivo.class, features);
     }
 
     private static URL __getWsdlLocation() {

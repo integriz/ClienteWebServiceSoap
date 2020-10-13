@@ -26,7 +26,6 @@ import javax.xml.ws.BindingProvider;
 import javax.xml.ws.WebServiceException;
 import javax.xml.ws.handler.MessageContext;
 
-
 public class ClienteWebService {
     public static void main(String [] args){
         //Servico 1

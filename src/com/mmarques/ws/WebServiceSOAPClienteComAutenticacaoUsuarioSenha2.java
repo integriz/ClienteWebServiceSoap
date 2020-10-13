@@ -17,7 +17,7 @@ import javax.xml.ws.FaultAction;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "WebServiceSOAPClienteComAutenticacaoUsuarioSenha2", targetNamespace = "http://controller.mmarques.com/")
+@WebService(name = "WebServiceSOAPClienteComAutenticacaoUsuarioSenha2", targetNamespace = "http://resource.mmarques.com/")
 @SOAPBinding(parameterStyle = SOAPBinding.ParameterStyle.BARE)
 @XmlSeeAlso({
     ObjectFactory.class
@@ -35,16 +35,16 @@ public interface WebServiceSOAPClienteComAutenticacaoUsuarioSenha2 {
      * @throws Exception_Exception
      */
     @WebMethod
-    @WebResult(name = "ecoResponse", targetNamespace = "http://controller.mmarques.com/", partName = "result")
-    @Action(input = "http://controller.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha2/ecoRequest", output = "http://controller.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha2/ecoResponse", fault = {
-        @FaultAction(className = Exception_Exception.class, value = "http://controller.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha2/eco/Fault/Exception")
+    @WebResult(name = "ecoResponse", targetNamespace = "http://resource.mmarques.com/", partName = "result")
+    @Action(input = "http://resource.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha2/ecoRequest", output = "http://resource.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha2/ecoResponse", fault = {
+        @FaultAction(className = Exception_Exception.class, value = "http://resource.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha2/eco/Fault/Exception")
     })
     public EcoResponse eco(
-        @WebParam(name = "eco", targetNamespace = "http://controller.mmarques.com/", partName = "parameters")
+        @WebParam(name = "eco", targetNamespace = "http://resource.mmarques.com/", partName = "parameters")
         Eco parameters,
-        @WebParam(name = "Username", targetNamespace = "http://controller.mmarques.com/", header = true, partName = "Username")
+        @WebParam(name = "Username", targetNamespace = "http://resource.mmarques.com/", header = true, partName = "Username")
         String username,
-        @WebParam(name = "Password", targetNamespace = "http://controller.mmarques.com/", header = true, partName = "Password")
+        @WebParam(name = "Password", targetNamespace = "http://resource.mmarques.com/", header = true, partName = "Password")
         String password)
         throws Exception_Exception
     ;

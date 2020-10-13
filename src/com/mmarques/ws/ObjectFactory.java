@@ -24,10 +24,10 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Upload_QNAME = new QName("http://controller.mmarques.com/", "upload");
-    private final static QName _DownloadResponse_QNAME = new QName("http://controller.mmarques.com/", "downloadResponse");
-    private final static QName _Download_QNAME = new QName("http://controller.mmarques.com/", "download");
-    private final static QName _UploadResponse_QNAME = new QName("http://controller.mmarques.com/", "uploadResponse");
+    private final static QName _UploadResponse_QNAME = new QName("http://resource.mmarques.com/", "uploadResponse");
+    private final static QName _Download_QNAME = new QName("http://resource.mmarques.com/", "download");
+    private final static QName _Upload_QNAME = new QName("http://resource.mmarques.com/", "upload");
+    private final static QName _DownloadResponse_QNAME = new QName("http://resource.mmarques.com/", "downloadResponse");
     private final static QName _UploadArg1_QNAME = new QName("", "arg1");
     private final static QName _DownloadResponseReturn_QNAME = new QName("", "return");
 
@@ -71,10 +71,28 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UploadResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://resource.mmarques.com/", name = "uploadResponse")
+    public JAXBElement<UploadResponse> createUploadResponse(UploadResponse value) {
+        return new JAXBElement<UploadResponse>(_UploadResponse_QNAME, UploadResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Download }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://resource.mmarques.com/", name = "download")
+    public JAXBElement<Download> createDownload(Download value) {
+        return new JAXBElement<Download>(_Download_QNAME, Download.class, null, value);
+    }
+
+    /**
      * Create an instance of {@link JAXBElement }{@code <}{@link Upload }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://controller.mmarques.com/", name = "upload")
+    @XmlElementDecl(namespace = "http://resource.mmarques.com/", name = "upload")
     public JAXBElement<Upload> createUpload(Upload value) {
         return new JAXBElement<Upload>(_Upload_QNAME, Upload.class, null, value);
     }
@@ -83,27 +101,9 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link DownloadResponse }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://controller.mmarques.com/", name = "downloadResponse")
+    @XmlElementDecl(namespace = "http://resource.mmarques.com/", name = "downloadResponse")
     public JAXBElement<DownloadResponse> createDownloadResponse(DownloadResponse value) {
         return new JAXBElement<DownloadResponse>(_DownloadResponse_QNAME, DownloadResponse.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link Download }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://controller.mmarques.com/", name = "download")
-    public JAXBElement<Download> createDownload(Download value) {
-        return new JAXBElement<Download>(_Download_QNAME, Download.class, null, value);
-    }
-
-    /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UploadResponse }{@code >}}
-     * 
-     */
-    @XmlElementDecl(namespace = "http://controller.mmarques.com/", name = "uploadResponse")
-    public JAXBElement<UploadResponse> createUploadResponse(UploadResponse value) {
-        return new JAXBElement<UploadResponse>(_UploadResponse_QNAME, UploadResponse.class, null, value);
     }
 
     /**

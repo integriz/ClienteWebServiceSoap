@@ -18,7 +18,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "WebServiceSOAPClienteComAutenticacaoUsuarioSenha", targetNamespace = "http://controller.mmarques.com/")
+@WebService(name = "WebServiceSOAPClienteComAutenticacaoUsuarioSenha", targetNamespace = "http://resource.mmarques.com/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -33,10 +33,10 @@ public interface WebServiceSOAPClienteComAutenticacaoUsuarioSenha {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "listar", targetNamespace = "http://controller.mmarques.com/", className = "com.mmarques.ws.Listar")
-    @ResponseWrapper(localName = "listarResponse", targetNamespace = "http://controller.mmarques.com/", className = "com.mmarques.ws.ListarResponse")
-    @Action(input = "http://controller.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha/listarRequest", output = "http://controller.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha/listarResponse", fault = {
-        @FaultAction(className = Exception_Exception.class, value = "http://controller.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha/listar/Fault/Exception")
+    @RequestWrapper(localName = "listar", targetNamespace = "http://resource.mmarques.com/", className = "com.mmarques.ws.Listar")
+    @ResponseWrapper(localName = "listarResponse", targetNamespace = "http://resource.mmarques.com/", className = "com.mmarques.ws.ListarResponse")
+    @Action(input = "http://resource.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha/listarRequest", output = "http://resource.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha/listarResponse", fault = {
+        @FaultAction(className = Exception_Exception.class, value = "http://resource.mmarques.com/WebServiceSOAPClienteComAutenticacaoUsuarioSenha/listar/Fault/Exception")
     })
     public List<Cliente> listar()
         throws Exception_Exception

@@ -17,7 +17,7 @@ import javax.xml.ws.ResponseWrapper;
  * Generated source version: 2.2
  * 
  */
-@WebService(name = "WebServiceSOAPEnviaRecebeArquivo", targetNamespace = "http://controller.mmarques.com/")
+@WebService(name = "WebServiceSOAPEnviaRecebeArquivo", targetNamespace = "http://resource.mmarques.com/")
 @XmlSeeAlso({
     ObjectFactory.class
 })
@@ -30,9 +30,9 @@ public interface WebServiceSOAPEnviaRecebeArquivo {
      * @param arg0
      */
     @WebMethod
-    @RequestWrapper(localName = "upload", targetNamespace = "http://controller.mmarques.com/", className = "com.mmarques.ws.Upload")
-    @ResponseWrapper(localName = "uploadResponse", targetNamespace = "http://controller.mmarques.com/", className = "com.mmarques.ws.UploadResponse")
-    @Action(input = "http://controller.mmarques.com/WebServiceSOAPEnviaRecebeArquivo/uploadRequest", output = "http://controller.mmarques.com/WebServiceSOAPEnviaRecebeArquivo/uploadResponse")
+    @RequestWrapper(localName = "upload", targetNamespace = "http://resource.mmarques.com/", className = "com.mmarques.ws.Upload")
+    @ResponseWrapper(localName = "uploadResponse", targetNamespace = "http://resource.mmarques.com/", className = "com.mmarques.ws.UploadResponse")
+    @Action(input = "http://resource.mmarques.com/WebServiceSOAPEnviaRecebeArquivo/uploadRequest", output = "http://resource.mmarques.com/WebServiceSOAPEnviaRecebeArquivo/uploadResponse")
     public void upload(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0,
@@ -47,9 +47,9 @@ public interface WebServiceSOAPEnviaRecebeArquivo {
      */
     @WebMethod
     @WebResult(targetNamespace = "")
-    @RequestWrapper(localName = "download", targetNamespace = "http://controller.mmarques.com/", className = "com.mmarques.ws.Download")
-    @ResponseWrapper(localName = "downloadResponse", targetNamespace = "http://controller.mmarques.com/", className = "com.mmarques.ws.DownloadResponse")
-    @Action(input = "http://controller.mmarques.com/WebServiceSOAPEnviaRecebeArquivo/downloadRequest", output = "http://controller.mmarques.com/WebServiceSOAPEnviaRecebeArquivo/downloadResponse")
+    @RequestWrapper(localName = "download", targetNamespace = "http://resource.mmarques.com/", className = "com.mmarques.ws.Download")
+    @ResponseWrapper(localName = "downloadResponse", targetNamespace = "http://resource.mmarques.com/", className = "com.mmarques.ws.DownloadResponse")
+    @Action(input = "http://resource.mmarques.com/WebServiceSOAPEnviaRecebeArquivo/downloadRequest", output = "http://resource.mmarques.com/WebServiceSOAPEnviaRecebeArquivo/downloadResponse")
     public byte[] download(
         @WebParam(name = "arg0", targetNamespace = "")
         String arg0);

@@ -17,14 +17,14 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaService", targetNamespace = "http://controller.mmarques.com/", wsdlLocation = "http://localhost:8080/AplicaoWebModeloWebServiceSOAP/WebServiceSOAPClienteComAutenticacaoUsuarioSenhaService?WSDL")
+@WebServiceClient(name = "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaService", targetNamespace = "http://resource.mmarques.com/", wsdlLocation = "http://localhost:8080/AplicaoWebModeloWebServiceSOAP/WebServiceSOAPClienteComAutenticacaoUsuarioSenhaService?WSDL")
 public class WebServiceSOAPClienteComAutenticacaoUsuarioSenhaService
     extends Service
 {
 
     private final static URL WEBSERVICESOAPCLIENTECOMAUTENTICACAOUSUARIOSENHASERVICE_WSDL_LOCATION;
     private final static WebServiceException WEBSERVICESOAPCLIENTECOMAUTENTICACAOUSUARIOSENHASERVICE_EXCEPTION;
-    private final static QName WEBSERVICESOAPCLIENTECOMAUTENTICACAOUSUARIOSENHASERVICE_QNAME = new QName("http://controller.mmarques.com/", "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaService");
+    private final static QName WEBSERVICESOAPCLIENTECOMAUTENTICACAOUSUARIOSENHASERVICE_QNAME = new QName("http://resource.mmarques.com/", "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaService");
 
     static {
         URL url = null;
@@ -69,7 +69,7 @@ public class WebServiceSOAPClienteComAutenticacaoUsuarioSenhaService
      */
     @WebEndpoint(name = "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaPort")
     public WebServiceSOAPClienteComAutenticacaoUsuarioSenha getWebServiceSOAPClienteComAutenticacaoUsuarioSenhaPort() {
-        return super.getPort(new QName("http://controller.mmarques.com/", "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaPort"), WebServiceSOAPClienteComAutenticacaoUsuarioSenha.class);
+        return super.getPort(new QName("http://resource.mmarques.com/", "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaPort"), WebServiceSOAPClienteComAutenticacaoUsuarioSenha.class);
     }
 
     /**
@@ -81,7 +81,7 @@ public class WebServiceSOAPClienteComAutenticacaoUsuarioSenhaService
      */
     @WebEndpoint(name = "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaPort")
     public WebServiceSOAPClienteComAutenticacaoUsuarioSenha getWebServiceSOAPClienteComAutenticacaoUsuarioSenhaPort(WebServiceFeature... features) {
-        return super.getPort(new QName("http://controller.mmarques.com/", "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaPort"), WebServiceSOAPClienteComAutenticacaoUsuarioSenha.class, features);
+        return super.getPort(new QName("http://resource.mmarques.com/", "WebServiceSOAPClienteComAutenticacaoUsuarioSenhaPort"), WebServiceSOAPClienteComAutenticacaoUsuarioSenha.class, features);
     }
 
     private static URL __getWsdlLocation() {

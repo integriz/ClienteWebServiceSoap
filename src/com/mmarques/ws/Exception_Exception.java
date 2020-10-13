@@ -10,7 +10,7 @@ import javax.xml.ws.WebFault;
  * Generated source version: 2.2
  * 
  */
-@WebFault(name = "Exception", targetNamespace = "http://controller.mmarques.com/")
+@WebFault(name = "Exception", targetNamespace = "http://resource.mmarques.com/")
 public class Exception_Exception
     extends java.lang.Exception
 {
